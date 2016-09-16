@@ -1,0 +1,55 @@
+<!-- TODO  -->
+<!-- 1. Remove Bootstrap data and hand up from server (once server implemenation is completed)-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="/styles/reset.css">
+        <link rel="stylesheet" href="/styles/styles.css">
+        <title></title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <!-- BootStrap Data -->
+        <script>
+            window.initialState = {
+                availableAppPaths: ['home','recipes', 'menu', 'proveyor', 'kitchen', 'user'],
+                appsByPath: {
+                    home: {
+                        path: '/',
+                        title: 'Home',
+                        id: 1,
+                        indexRoute: true
+                    },
+                    'recipes': {
+                        path: '/recipes',
+                        title: 'Recipes',
+                        id: 2
+                    },
+                    menu: {
+                        path: '/menu',
+                        title: 'Menu',
+                        id: 3
+                    },
+                    proveyor: {
+                        path: '/proveyor',
+                        title: 'Proveyor',
+                        id: 4
+                    },
+                    kitchen: {
+                        'path': '/kitchen',
+                        'title': 'Kitchen',
+                        id: 5
+                    },
+                    user: {
+                        path: '/user',
+                        title: 'User',
+                        id: 6
+                    }
+                }
+            }
+        </script>
+        <script type="text/javascript" src="/bundle.js"></script>
+    </body>
+</html>
